@@ -1,0 +1,117 @@
+---
+title: "Replace Names and Values"
+output: html_document
+date: "2024-05-28"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+library(rvest)
+```
+
+```{r}
+unique_names <- function(names, name_col, rows_per_name = "single"){
+  
+  if(paste(rows_per_name) == "single"){
+    n <- nrow(name_col)
+    replace_status <- ifelse(n > nrow(names), TRUE, FALSE) #replace = TRUE when there are not enough names
+    name_col <- sample_n(names, n, replace = replace_status) #samples a replacement name for every row
+  } 
+  else{  
+    unique_name_col <- unique(name_col)
+    unique_n <- nrow(unique_name_col)
+    replace_status <- ifelse(unique_n > nrow(names), TRUE, FALSE) #replace = TRUE when there are not enough names
+    unique_names <- sample_n(names, unique_n, replace = replace_status)  #samples a replacement name for every unique name
+    
+    for(i in 1:unique_n){
+      name_col[which(name_col == paste(unique_name_col[i,])), ] <- unique_names[i, ]
+      #replaces every instance of a unique name in name_col with a unique replacement name
+    }
+  }
+  
+  name_col <- stringr::str_to_title(name_col[[1]]) #[[]] notation is necessary here for vector format
+  
+  return(name_col)
+}
+```
+
+```{r}
+replace_names <- function(x, col_name, name_type = "both", rows_per_name = "single"){
+  
+  name_col_num <- which(names(x) == paste(col_name)) #index of name_col
+  name_col <- x[, name_col_num] #original names
+  
+  if(name_type == "first"){
+    
+    #web scrapes first names
+    link_first <- "https://namecensus.com/first-names/"
+    names_first <- link_first %>% 
+      read_html() %>% 
+      html_table(fill=T) %>%
+      .[[1]] %>%
+      select(c("Male", "Female")) %>%
+      slice(-1)
+    names_first_1 <- data.frame("Name" = c(names_first$Male, names_first$Female))
+    
+    #replaces the original column of names with a new column of names
+    x[[name_col_num]] <- unique_names(names_first_1, name_col, rows_per_name)
+  } 
+  else if(name_type == "last"){
+    
+    #web scrapes last names
+    link_last <- "https://namecensus.com/last-names/"
+    names_last <- link_last %>% 
+    read_html() %>% 
+    html_table(fill=T) %>%
+    .[[1]] %>%
+    select("Name")
+    
+    #replaces the original column of names with a new column of names
+    x[[name_col_num]] <- unique_names(names_last, name_col, rows_per_name)
+  } 
+  else if(name_type == "both"){
+    
+    #web scrapes first names
+    link_first <- "https://namecensus.com/first-names/"
+    names_first <- link_first %>% 
+      read_html() %>% 
+      html_table(fill=T) %>%
+      .[[1]] %>%
+      select(c("Male", "Female")) %>%
+      slice(-1)
+    names_first_1 <- data.frame("Name" = c(names_first$Male, names_first$Female))
+    #web scrapes last names
+    link_last <- "https://namecensus.com/last-names/"
+    names_last <- link_last %>% 
+      read_html() %>% 
+      html_table(fill=T) %>%
+      .[[1]] %>%
+      select("Name")
+    
+    #replaces the original column of names with a new column of names
+    x[, name_col_num] <- data.frame(First_Name = unique_names(names_first_1, name_col, rows_per_name), 
+                                    Last_Name = unique_names(names_last, name_col, rows_per_name)) %>%
+      mutate(paste(.[[1]], .[[2]]), .keep = "none") 
+  }
+  return(x)
+}
+```
+
+```{r}
+replace_numbers <- function(x, col_name, number_type = "numeric"){
+ 
+  number_col_num <- which(names(x) == paste(col_name)) #index of number_col
+  number_col <- as.numeric(x[[number_col_num]]) #original numbers
+  n <- length(number_col)  
+  
+  if(number_type == "numeric"){
+    x[[number_col_num]] <- rnorm(n, number_col, number_col/10)
+  } else if(number_type == "integer" | number_type == "int"){
+    x[[number_col_num]] <- rpois(n, number_col)
+  }
+  
+  return(x)
+}
+```
+
