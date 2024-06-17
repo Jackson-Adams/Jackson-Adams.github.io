@@ -3,7 +3,7 @@ Personal website for Jackson Adams.
 
 ## Projects
 
- **[temp-test](https://github.com/Jackson-Adams/repository-test)**
+ **[temp-test](https://github.com/Jackson-Adams/repository-test/Replace Names and Values.Rmd)**
 Below are some projects I have worked on through or outside of my classes:
 
 # Starrez: In my job as a resident advisor in my junior year, I had some exposure to databases, found problems, and created solutions.
