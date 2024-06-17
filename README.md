@@ -4,38 +4,18 @@ Personal website for Jackson Adams.
 ## Projects
 
  **[temp-test](https://github.com/Jackson-Adams/repository-test)**
- **[temp-test-file](**https://github.com/Jackson-Adams/repository-test**)**
+ **[temp-test-file]([**https://github.com/Jackson-Adams/repository-test**](https://github.com/Jackson-Adams/Jackson-Adams.github.io/blob/main/Replace%20Names%20and%20Values.Rmd))**
+**[https://github.com/Jackson-Adams/repository-test](https://github.com/Jackson-Adams/Jackson-Adams.github.io/blob/main/Replace%20Names%20and%20Values.Rmd)**
  
 Below are some projects I have worked on through or outside of my classes:
 
-# Starrez: In my job as a resident advisor in my junior year, I had some exposure to databases, found problems, and created solutions.
-##feedback too clunky for use, created webapp
-##"still suffers" from inability/would not be wise to use webscraping with password protection
+# Outlook Contact Import csv Creation: 
+While working as a Resident Advisor in my junior year, I found there was no efficient way to create Outlook contact lists from emails in the school's housing database. I created a script in R to produce csv files for each floor in a set of residence halls, which could then be imported as contacts by the RAs of each floor.
 
-# yugi: Data cleaning, problem solving, simulation experience, experience working in a team.
+# Uncle's Pizza Excel Summary: 
+I received a commission to create an Excel Spreadsheet for the small business Uncle's Pizza which would summarize the number of pizza
+orders from the website Square in a format that could be easily printed.
 
-# uncle's pizza: Adapting to specific client requests, excel organizing data, dynamic update with data input.
-##pizza graph
-
-# website creation, ethics of AI data collection techniques in web scraping/data science are
-
-
-<html>
-  <head>
-    <title>This is the personal website of <strong>Jackson Adams</strong>.</title>
-  </head>
-  <body>
-    <p><strong>Starrez Housing</strong></p>
-  </body>
-  <body>
-    <p><strong>Excel Dynamic Spreadsheet</strong></p>
-  </body>
-  <body>
-    <p><strong>Collector Card Pack Simulation Group Project</strong></p>
-  </body>
-  <body>
-    <p><strong>AI Data Ethics Website Group Project</strong></p>
-  </body>
-</html>
-
+# Replace Names and Values: 
+I created a script in R to replace sensitive information in a csv file. Names are replaced with a sample of webscraped popular names, with options to replace first names, last names, or both. Numbers are replaced with similar values, with numeric values from the Normal distribution, and integer values from the Poisson distribution with a mean of the original value.
 
