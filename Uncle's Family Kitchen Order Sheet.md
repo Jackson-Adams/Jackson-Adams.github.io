@@ -1,6 +1,6 @@
 # Uncle's Family Kitchen Order Sheet:
  - Orders are copied from Square into the Values sheet, then the Output sheet automatically updates to summarize the orders. In this version of the sheet, all Recipient Names and Item Quantities have been replaced using my Replace Names and Values script.
- - You can edit the number of pizzas in the Item Quantity column of the Values sheet to see how the order summary changes on the Outputs sheet(after a brief delay).
+ - You can edit the number of pizzas in the Item Quantity column of the Values sheet to see how the order summary changes on the Outputs sheet (after a brief delay).
 
 
   
