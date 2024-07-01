@@ -4,21 +4,21 @@ In this version of the sheet, all Recipient Names and Item Quantities have been 
 You can edit the number of pizzas in the Item Quantity column to see how the order summary changes on the Outputs sheet.  
 
 <div style="text-align: left"> 
-Orders are copied from Square into the Values sheet, then the Output sheet automatically updates to summarize the orders.  
-In this version of the sheet, all Recipient Names and Item Quantities have been replaced using my Replace Names and Values script.  
-You can edit the number of pizzas in the Item Quantity column to see how the order summary changes on the Outputs sheet.  
+Orders are copied from Square into the Values sheet, then the Output sheet automatically updates to summarize the orders.<br>
+In this version of the sheet, all Recipient Names and Item Quantities have been replaced using my Replace Names and Values script.<br>
+You can edit the number of pizzas in the Item Quantity column to see how the order summary changes on the Outputs sheet.<br>
 </div>  
   
 <div style="text-align: center"> 
-Orders are copied from Square into the Values sheet, then the Output sheet automatically updates to summarize the orders.  
-In this version of the sheet, all Recipient Names and Item Quantities have been replaced using my Replace Names and Values script.  
-You can edit the number of pizzas in the Item Quantity column to see how the order summary changes on the Outputs sheet.  
+Orders are copied from Square into the Values sheet, then the Output sheet automatically updates to summarize the orders.<br>
+In this version of the sheet, all Recipient Names and Item Quantities have been replaced using my Replace Names and Values script.<br>
+You can edit the number of pizzas in the Item Quantity column to see how the order summary changes on the Outputs sheet.<br>
 </div>  
   
 <div style="text-align: justify"> 
-Orders are copied from Square into the Values sheet, then the Output sheet automatically updates to summarize the orders.  
-In this version of the sheet, all Recipient Names and Item Quantities have been replaced using my Replace Names and Values script.  
-You can edit the number of pizzas in the Item Quantity column to see how the order summary changes on the Outputs sheet.  
+Orders are copied from Square into the Values sheet, then the Output sheet automatically updates to summarize the orders.<br>
+In this version of the sheet, all Recipient Names and Item Quantities have been replaced using my Replace Names and Values script.<br>
+You can edit the number of pizzas in the Item Quantity column to see how the order summary changes on the Outputs sheet.<br>
 </div> 
   
 
