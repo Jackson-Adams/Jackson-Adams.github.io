@@ -4,7 +4,8 @@ Below are some projects I have worked on:
 
 # Class Projects
 
-## **[Card Pack Price Webscraping and Simulation for STOR 320: Introduction to Data Science:](https://github.com/Jackson-Adams/Jackson-Adams.github.io/blob/main/Group_7_Final_Paper.html)**
+## STOR 320: Introduction to Data Science:
+## **[Card Pack Price Webscraping and Simulation](Group_7_Final_Paper.html)**
  - I worked in a group with 4 other students to webscrape the market prices of Yugioh cards, clean this price data and join it to a dataset of card characteristics, analyze which factors contributed most to card price, and simulate the most cost effective way to purchase all cards in a set.
 
 
