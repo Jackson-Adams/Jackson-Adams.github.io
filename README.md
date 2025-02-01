@@ -1,5 +1,4 @@
 # Jackson Adams
-Personal website for Jackson Adams.
 Below are some projects I have worked on:
 
 # Class Projects
