@@ -8,10 +8,16 @@ Below are some projects I have worked on:
  - I worked in a group with 4 other students to webscrape the market prices of Yugioh cards, clean this price data and join it to a dataset of card characteristics, analyze which factors contributed most to card price, and simulate the most cost effective way to purchase all cards in a set.
 
 ## STOR 565: Machine Learning:
-## **[Machine Learning Zillow Price Prediction](STOR_565_Final_Report.pdf)**
+## **[Machine Learning Zillow Price Prediction](STOR_565_Final_Paper.pdf)**
  - I worked in a group with 3 other students to train a variety of machine learning models on housing data, then apply the most effective model
 to predict prices of similar houses on Zillow from key features and present the results.
 
+## LING 460: Textual Analysis With R:
+## **[Mixed Model Sentiment Analysis](LING_460_Final_Paper.pdf)**
+ - I worked in a group with 3 other students to create a mixed effects model to predict hotel review scores from the words present in reviews while
+accounting for random variation due to the hotel for which the review was placed. We then constructed confidence intervals for the model coefficients
+to determine whether there was a significant difference in review score for commonly used words dependent upon whether the word was present in the
+positive or negative section of the review.
 
 # Professional Projects
 
